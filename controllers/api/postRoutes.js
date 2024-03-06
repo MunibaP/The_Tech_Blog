@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const {Comment, Post, User} = require('../models');
-const withAuth = require('../utils/auth');
+const {Comment, Post, User} = require('../../models');
+const withAuth = require('../../utils/auth');
 
 // Funtion to get all the post with certain username
 router.get('/', async(req, res) => {
