@@ -1,5 +1,5 @@
 // Importing required modules and dependencies
-const express = reauire('express');
+const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
