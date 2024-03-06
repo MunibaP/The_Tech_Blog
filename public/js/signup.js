@@ -10,7 +10,7 @@ const techSignupFormHandler = async(event) => {
         const response = await fetch('/api/users/signup', {
             method: 'POST',
             body: JSON.stringify({username, email, password}),
-            headers: {'Content_Type': 'application/json'},
+            headers: {'Content-Type': 'application/json'},
         });
 
         if(response.ok) {
@@ -22,7 +22,7 @@ const techSignupFormHandler = async(event) => {
 };
 
 // Function event listener for login form
-const techSignupForm = document.querySelector('#signup_form');
+const techSignupForm = document.querySelector('#signup-form');
 if(techSignupForm) {
     techSignupForm.addEventListener('submit', techSignupFormHandler);
 }
