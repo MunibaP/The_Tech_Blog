@@ -9,7 +9,7 @@ const newTechCommentFormHandler = async(event) => {
         const response = await fetch(`/api/comments`, {
             method: 'POST',
             body: JSON.stringify({comment_text: content, post_id}),
-            headers: {'Content_Type': 'application/json'},
+            headers: {'Content-Type': 'application/json'},
         });
 
         if(response.ok) {

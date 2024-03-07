@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Setting Handlebars.js engine with custom helpers
-const hbs = exphbs.create({helpers});
+const hbs = exphbs.create({helpers: require('./utils/helpers')});
 
 const sess = {
     secret: 'Super secret secret',

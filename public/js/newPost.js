@@ -8,7 +8,7 @@ const newTechPostFormHandler = async(event) => {
         const response = await fetch('/api/posts', {
             method: 'POST',
             body: JSON.stringify({title, content}),
-            headers: {'Content_Type': 'application/json'},
+            headers: {'Content-Type': 'application/json'},
         });
 
         if(response.ok) {
